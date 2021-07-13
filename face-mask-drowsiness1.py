@@ -22,10 +22,10 @@ def eye_aspect_ratio(eye):
 thresh = 0.23
 frame_check = 35
 detect = dlib.get_frontal_face_detector()
-predict = dlib.shape_predictor(".\shape_predictor_68_face_landmarks.dat")# Dat file is the crux of the code
+#predict = dlib.shape_predictor(".\shape_predictor_68_face_landmarks.dat")# Dat file is the crux of the code
 #predict = dlib.shape_predictor(".\custom_shape_predictor_68_face_landmarks.dat")# Dat file is the crux of the code
 #predict = dlib.shape_predictor(".\shape_predictor_5_face_landmarks.dat")# Dat file is the crux of the code
-#predict = dlib.shape_predictor(".\eye_predictor7.dat")# Dat file is the crux of the code
+predict = dlib.shape_predictor(".\eye_predictor7.dat")# Dat file is the crux of the code
 
 (lStart, lEnd) = face_utils.FACIAL_LANDMARKS_IDXS["left_eye"]
 (rStart, rEnd) = face_utils.FACIAL_LANDMARKS_IDXS["right_eye"]
